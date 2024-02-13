@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Years, Secure Online</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add font here, yt vid 13.59 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+<section class = "header"> 
+    <nav>
+        <a href = "index.html"><img src="images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href= "">HOME</a></li>
+                <li><a href= "">ABOUT</a></li>
+                <li><a href= "">CYBER THREATS</a></li>
+                <li><a href= "">QUIZ</a></li>  <!-- (CREATE VID AND ASK WHAT THEY WOULD DO) -->
+                <li><a href= "">EDUCATIONAL RESOURCES</a></li> <!-- or news()/NEWS -->
+                <li><a href= "">CONTACT US</a></li>
+            <ul>   
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class = "text-box">
+    <h1>Golden Years, Secure Online</h1>
+    <p>A Senior's Guide Detecting and Preventing Cyberattacks</p>
+    <a href="" class="middle-btn">Start the Guide!</a> <!-- Add br here if the sentence is too long, yt vid 19.19 -->
+
+</div>
+
+</section>
+
+
+<!---------------------homePage------------------->
+
+<section class = "homePage">
+        <h1>Why is cybersecurity crucial for seniors? </h1>
+        <p>As technology evolves, so do the risks associated with online activities. Cybercriminals often target seniors, taking advantage of their trust and less familiarity with digital threats.</p>
+        <p>At GoldYears, we believe that cybersecurity is not just about protecting devices; it's about safeguarding your peace of mind. Imagine navigating the internet with confidence, knowing you have the tools to recognize and thwart potential threats.</p>
+        <p>By understanding the importance of cybersecurity, seniors can: <br>
+
+            - Protect personal and financial information. <br>
+            - Safely connect with friends and family online. <br>
+            - Enjoy the benefits of technology without fear or hesitation. <br></p>
+            
+            <p>Join us on this educational journey to empower yourself with the knowledge needed to embrace the digital world securely. Together, we can create a safer online environment for every senior. <br>
+            
+            Start your cybersecurity journey now!</p>
+</section>
+
+<section class="definitions">
+    <h1>Important Terminologies</h1>
+
+    <div class="row">
+        <div class="definitions-col">
+            <h3>Cyber Security</h3>
+            <p>It involves protecting computer systems, networks, and data from unauthorized access or damage</p>
+        </div>
+        <div class="definitions-col">
+            <h3>Cyber Threats</h3>
+            <p>Refers to potential risks or dangers in the digital realm, such as malware or hacking attempts</p>
+        </div>
+        <div class="definitions-col">
+            <h3>Cyber Attack</h3>
+            <p>It is an intentional act that aims to exploit vulnerabilities in these systems, often causing disruption or unauthorized access for malicious purposes.</p>
+        </div>
+    </div>
+</section>
+
+<!----JAVA FOR TOGGLE MENU--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+<!---homeContact--->
+
+<section class="homeContact">
+    <h1>Any Concerns Regarding Any Cyber Security Measures<br>Please Do Not Hestiate to Contact Us</h1>
+    <a href=""class = "middle-btn">Contact Us</a>
+</section>
+
+
+<!---homeContact--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to Golden Years, your trusted companion in the digital world. Our mission is to empower seniors with the knowledge and tools needed to navigate the online landscape securely.<br> In an era of advancing technology, we understand the unique challenges seniors face and strive to make the internet a safer space for everyone.</p>
+    <p>Our comprehensive cybersecurity guide is tailored specifically for seniors, offering insights, tips, and resources to enhance your online safety.<br> Whether you're new to the digital world or looking to sharpen your cybersecurity skills, Golden Years is here to guide you every step of the way.</p>
+    <p>Made by Muhamade Ashif Muhamade Muhajireen</p>
+</section>
+
+
+</body>
+</html>
