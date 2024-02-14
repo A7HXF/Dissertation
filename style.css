@@ -291,46 +291,43 @@ h3{
 }
 
 .threats-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .threats-col img {
     width: 100%;
+    display: block; /* Ensuring the image behaves as a block element */
 }
 
 .layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0; /* Adjusted positioning */
     left: 0;
-    transition: 0.5s;
+    width: 100%;
+    height: 50%; /* Adjusted height */
+    background: rgba(255, 0, 0, 0.7);
+    transition: background 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.layer:hover {
-    background: rgba(255,0,0,0.7);
+.threats-col:hover .layer {
+    opacity: 1;
 }
-
 
 .layer h3 {
-    width: 100%;
-    font-weight: 500;
     color: #fff;
     font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
+    font-weight: 500;
     opacity: 0;
-    transition: 0.5s;
+    transition: opacity 0.5s;
 }
 
-.layer:hover h3 {
-    bottom: 49%;
+.threats-col:hover .layer h3 {
     opacity: 1;
 }
