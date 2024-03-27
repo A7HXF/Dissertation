@@ -221,7 +221,10 @@ h3{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    border-top: 1px solid #000000; /* Solid line as a separator */
+    margin-top: 50px; /* Adds space above the border for visual separation */
 }
+
 
 
 .footer h4 {
@@ -291,11 +294,26 @@ h3{
 }
 
 .threats-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+    flex: 1; /* Allow each column to take up equal space */
+    margin: 0 10px 40px; /* Add some space between the columns */
+    padding: 20px;
+    background: #fff; /* Optional: Set a background color */
+    border-radius: 10px; /* Optional: Round the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add some shadow for depth */
+}
+
+.prevention-section {
+    text-align: center; /* Center the prevention section content */
+    padding: 20px;
+    margin: 20px auto; /* Center the section on the page */
+    max-width: 80%; /* Adjust the width as necessary */
+    border-radius: 10px; /* Optional: Round the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add some shadow for depth */
+}
+
+.middle-btn.red-btn {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
 }
 
 .threats-col img {
