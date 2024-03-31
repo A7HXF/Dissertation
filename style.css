@@ -294,13 +294,19 @@ h3{
 }
 
 .threats-col {
-    flex: 1; /* Allow each column to take up equal space */
-    margin: 0 10px 40px; /* Add some space between the columns */
+    flex: 1;  /* Make sure all columns take up equal width */
+    margin: 0 10px 40px;
     padding: 20px;
-    background: #fff; /* Optional: Set a background color */
-    border-radius: 10px; /* Optional: Round the corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add some shadow for depth */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 300px; /* Fixed height, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center your image horizontally */
+    justify-content: center; /* This will center your image vertically */
 }
+
 
 .prevention-section {
     text-align: center; /* Center the prevention section content */
