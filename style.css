@@ -243,8 +243,12 @@ h3{
     background-size: cover;
     text-align: center;
     color: #fff;
-    margin-top: 0; /* Remove or reduce the margin-top */
 }
+
+.sub-header h1 {
+    margin-top: 70px; /* Adjust this value as needed to move the title down */
+}
+
 
 .about-us {
     display: flex;
