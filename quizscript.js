@@ -100,6 +100,16 @@ function showScore(){
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Try Again";
     nextButton.style.display = "block";
+    handleRedirectionButton()
+}
+
+
+function handleRedirectionButton() {
+    const backButton = document.getElementById("back-btn");
+    backButton.style.display = "block"; // Make the button visible
+    backButton.addEventListener("click", function() {
+        window.location.href = "quizzes.html"; // Redirect on click
+    });
 }
 
 
@@ -111,6 +121,8 @@ function handleNextButton () {
         showScore();
     }
 }
+
+
 
 nextButton.addEventListener("click", ()=>{
     if(currentQuestionIndex < questions.length){

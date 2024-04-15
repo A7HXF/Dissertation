@@ -298,6 +298,22 @@ h3{
 }
 
 .threats-col {
+    flex: none;  /* Override the flex: 1 to remove flex sizing */
+    width: 300px; /* Fixed width for all tiles */
+    height: 250px; /* Fixed height for all tiles */
+    margin: 0 10px 40px; /* Margin around the tiles */
+    padding: 10px; /* Padding inside each tile */
+    background: #fff; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    overflow: hidden; /* Ensures content does not overflow */
+}
+
+#cyber-threats-page .threats-col {
     flex: 1;  /* Make sure all columns take up equal width */
     margin: 0 10px 40px;
     padding: 20px;
@@ -310,6 +326,16 @@ h3{
     align-items: center; /* This will center your image horizontally */
     justify-content: center; /* This will center your image vertically */
 }
+
+
+
+
+.threats-col img {
+    width: 100%; /* Full width of the tile */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Increased from previous setting for larger images */
+}
+
 
 
 .prevention-section {
@@ -440,8 +466,15 @@ h3{
 }
 
 body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to the unique class */
-    background: #001e4d; /* Blue background specific to the quiz page */
+    background: none; /* Remove the blue background */
 }
+
+/* Add this specific style for the quiz footer */
+.quiz-footer {
+    background-color: white;
+    color: black; /* You might need to adjust the text color */
+}
+
 
 .app{
     background: #fff;
@@ -450,6 +483,7 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    border: 3px solid #001e4d; /* Change the border color to blue */
 }
 
 .app h1 {
@@ -505,6 +539,19 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+
+#back-btn {
+    background: #001e4d; /* Change the background color to differentiate it */
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none; /* Ensure it's visible by default */
 }
 
 .correct {
