@@ -558,6 +558,10 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 3; /* Ensure hamburger icon is above other content */
     }
     
     .text-box {
@@ -610,4 +614,11 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
         width: calc(100% - 30px); /* Adjust input width for smaller screens */
         margin-bottom: 20px; /* Adjust margin bottom for spacing */
     }
+    
+    /* Show/hide the navigation links when hamburger icon is clicked */
+    nav .fa:hover + .nav-links,
+    .nav-links:hover {
+        display: block;
+    }
 }
+
