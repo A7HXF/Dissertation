@@ -39,7 +39,7 @@ nav img {
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .nav-links ul li::after{
@@ -67,12 +67,12 @@ nav img {
 }
 
 .text-box h1{
-    font-size: 62px;
+    font-size: 72px;
 }
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -82,7 +82,7 @@ nav img {
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 16px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -138,13 +138,13 @@ nav .fa {
 }
 
 h1{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
 }
 
 p {
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -487,7 +487,7 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
 }
 
 .app h1 {
-    font-size: 25px;
+    font-size: 28px;
     color: #001e4d;
     font-weight: 600;
     border-bottom: 1px solid #333;
@@ -499,7 +499,7 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
 }
 
 .quiz h2 {
-    font-size: 18px;
+    font-size: 25px;
     color: #001e4d;
     font-weight: 600;
 }
