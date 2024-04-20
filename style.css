@@ -561,3 +561,92 @@ body.quiz-app { /* This CSS rule will only affect the body of quiz.html due to t
 .incorrect {
     background: #ff9393;
 }
+
+
+/* Mobile-friendly styles */
+@media (max-width: 700px) {
+    .header {
+        min-height: 50vh; /* Reduce header height for smaller screens */
+    }
+    
+    .nav-links {
+        text-align: center; /* Center align the navigation links */
+        display: none; /* Hide the navigation links by default */
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 100%; /* Take full width */
+        top: 0;
+        right: 0;
+        transition: right 1s; /* Transition the right property */
+        z-index: 2;
+    }
+    
+    .nav-links ul {
+        padding: 30px;
+    }
+    
+    .nav-links ul li {
+        display: block; /* Change to block for vertical layout */
+        padding: 15px 0; /* Add padding for spacing */
+    }
+    
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .text-box {
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .text-box h1 {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+    
+    .homePage, .definitions, .homeContact, .sub-header, .threats, .location, .contact-us, .app {
+        width: 100%; /* Make content width full for smaller screens */
+        padding: 50px 0; /* Add padding for spacing */
+    }
+    
+    .about-us {
+        flex-direction: column; /* Stack about columns vertically */
+        align-items: center; /* Center align about columns */
+    }
+    
+    .about-col {
+        width: 100%; /* Make about columns full width */
+        margin-bottom: 30px; /* Add margin bottom for spacing */
+    }
+    
+    .about-col img {
+        width: 80%; /* Reduce image width for smaller screens */
+    }
+    
+    .news-title {
+        height: auto; /* Auto height for smaller screens */
+    }
+    
+    .news-title h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+    
+    .footer {
+        padding: 20px 0; /* Adjust footer padding for smaller screens */
+    }
+    
+    .contact-col input,
+    .contact-col textarea {
+        width: calc(100% - 30px); /* Adjust input width for smaller screens */
+        margin-bottom: 20px; /* Adjust margin bottom for spacing */
+    }
+}
